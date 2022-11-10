@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "ListFilesByUser";
+    Layout = "~/Views/Shared/_LawyerLayout.cshtml";
+}
+
+<h2>Kullanıcıya Göre Dosyaları Listele</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Dosya İsmi</th>
+        <th>Dosyanın Kaportacısı</th>
+        <th>Dosyanın Müşterisi</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.MyFileName</td>
+            <td>@item.User.Username</td>
+            <td><a href="/LawyerPanel/DownloadFile/@item.FileId" class="btn btn-warning">İndir</a></td>
+        </tr>
+    }
+</table>
+<br />
+

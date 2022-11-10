@@ -1,0 +1,26 @@
+﻿@model EntityLayer.Concrete.User
+@{
+    ViewBag.Title = "EditUser";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Kullanıcı Düzenle</h2>
+<br />
+@using (Html.BeginForm("EditUser", "AdminPanel", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.Label("Id")
+        @Html.TextBoxFor(x => x.UserId, new {@class="form-control"})
+        <br />
+        @Html.Label("Kullanıcı Adı:")
+        @Html.TextBoxFor(x => x.Username, new { @class = "form-control" })
+        <br />
+        @Html.Label("Şifre:")
+        @Html.TextBoxFor(x => x.Password, new { @class = "form-control" })
+        <br />
+        @Html.Label("Telefon Numarası:")
+        @Html.TextBoxFor(x => x.PhoneNumber, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-warning">Kaydet</button>
+    </div>
+}

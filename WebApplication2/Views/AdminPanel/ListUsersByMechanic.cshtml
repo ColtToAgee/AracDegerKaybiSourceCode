@@ -1,0 +1,32 @@
+﻿@using EntityLayer.Concrete
+@model List<User>
+@{
+    ViewBag.Title = "ListUsersByMechanic";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Kaportacıya Göre Kullanıcıları Listele</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Kullanıcı Adı</th>
+        <th>Şifre</th>
+        <th>Telefon Numarası</th>
+        <th>Kaportacısı</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Username</td>
+            <td>@item.Password</td>
+            <td>@item.PhoneNumber</td>
+            <td>@item.Mechanic.MechanicUserName</td>
+            <td><a href="/AdminPanel/DeleteUser/@item.UserId" class="btn btn-danger">Sil</a></td>
+            <td><a href="/AdminPanel/EditUser/@item.UserId" class="btn btn-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<br />
+<a href="/AdminPanel/AddUser" class="btn btn-warning">Yeni Kullanıcı Ekle</a>

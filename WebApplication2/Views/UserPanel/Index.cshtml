@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Müşterileri Listele</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>Kullanıcı Adı</th>
+        <th>Telefon Numarası</th>
+        <th>Dosyalar</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Username</td>
+            <td>@item.PhoneNumber</td>
+            <td><a href="/UserPanel/Files/@item.UserId" class="btn btn-primary">Dosyalar</a></td>
+        </tr>
+    }
+</table>
+<br />
+

@@ -1,0 +1,284 @@
+﻿@model EntityLayer.Concrete.Form
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>ADK-Danışmanlık</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="~/colorlib-regform-3/images/logo.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="~/startbootstrap-creative-gh-pages/css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">
+                <img src="~/colorlib-regform-3/images/logo.png" width="100" height="50">
+                <span class="brand-text font-weight-light">Danışmanlık</span>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/Home/Services">Hizmetler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#whoweare">Biz Kimiz?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#calculate">Hesapla</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="~/Login/Index">Giriş</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white-75 font-weight-bold">Araç Değer Kaybınızı Geri Almaya Ne Dersiniz ?</h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">Eğer aracınız pert değilse ve kusurun tamamı sizde değilse daha ne bekliyorsunuz? </p>
+                    <a class="btn btn-primary btn-xl" href="#calculate">Hemen Değer Kaybınızı Hesaplayın</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="page-section bg-warning" id="whoweare">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-5 col-md-2  justify-content-start">
+                    <img src="~/startbootstrap-creative-gh-pages/arac-deger-kaybi-scaled.jpg" class="img-fluid" style="border-radius:50%;" />
+                </div>
+                <div class="col-lg-7 col-md-2  justify-content-end">
+                    <h4 style="font-family:'Times New Roman'; font-size:30px; color:white; font-weight:bold;">Biz Kimiz?</h4>
+                    <br />
+                    <p class="font-weight-bold" style="font-family: 'Times New Roman'; font-size: 20px; ">
+                        ADK danışmanlık Sigorta hukukunda uzman avukat kadrosu ile hukuki birikimi ve tecrübesi ile trafik kazası taraflarına maddi ve manevi tazminat hakları konusunda danışmanlık hizmeti vermektedir.
+                        <br /><br />
+                        ADK Danışmanlık,  meydana gelen trafik kazaları nedeniyle yaşanan ölüm,  daimi sakatlık ve yaralanmalar  sonucunda uğramış olduğunuz  maddi ve manevi mağduriyeti en hızlı ve güvenilir çözümlerle gidermek için çalışan bir danışmanlık şirketidir. Kaza sonrasında ölüm, daimi sakatlık ve yaralanmalarda maddi tazminat haklarınızı inceleyip poliçedeki teminatlar doğrultusunda almanız gereken tazminatı sorunsuz olarak almanızı sağlayan, sonuçlandırana kadar hiçbir ücret talep etmeyen bir danışmanlık şirketidir.
+                        <br /><br />
+                    </p>
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-5 col-md-2 justify-content-start">
+                    <h4 style="font-family:'Times New Roman'; font-size:30px; color:white; font-weight:bold;">Ekibimiz</h4>
+                    <br />
+                    <p class="font-weight-bold" style="font-family:'Times New Roman'; font-size:18px;">
+                        Av. Ayşe Nur GÜLSAR
+                        <br /><br />
+                        Avukat Ayşe Nur GÜLSAR, 1994 doğumludur. Yalova Üniversitesi Hukuk Fakültesi’nde hukuk eğitimi almıştır. Hukuk fakültesinden 2016 yılında mezun olmuştur. 2016 yılında yaptığı avukatlık stajının ardından kurduğu hukuk bürosuyla 2017 yılından beri Bursa'da serbest avukatlık yapmaktadır. 2017 yılından itibaren Bursa Barosu'nun çeşitli komisyonlarında aktif olarak görev almıştır. Çeşitli sivil toplum örgütlerine üye olarak hukuk çalışmaları yürütmüştür. Sigorta hukuku  alanında meslek içi eğitim seminerleri almıştır. Arabuluculuk ve uzlaştırma eğitimleri almıştır.Kişisel Verişerin Korunması Kanunu uygulaması ve işletmelere etkisi eğitim sertifikası almıştır. Avukat Ayşe Nur GÜLSAR, kurduğu avukatlık bürosuyla Sigorta Hukuku ve İş Hukuku başta olmak üzere birçok hukuk alanında avukatlık faaliyeti yürütmektedir. Sigorta hukuku ve bundan kaynaklanan uyuşmazlıklar ile ilgili süreçleri yönetmektedir.
+                        <br /><br />
+                    </p>
+                </div>
+                <br /><br />
+                <div class="col-lg-7 col-md-2 justify-content-end">
+                    <img src="~/startbootstrap-creative-gh-pages/kaza.jpg" class="img-fluid" style="border-radius:50%;" />
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-5 col-md-2 justify-content-start">
+                    <img src="~/startbootstrap-creative-gh-pages/kaza2.jpg" class="img-fluid" style="border-radius:50%;" />
+                </div>
+                <div class="col-lg-7 col-md-2 justify-content-end">
+                    <p class="font-weight-bold" style="font-family:'Times New Roman'; font-size:18px;">
+                        Av. Şeyma Osmaniye
+                        <br /><br />
+                        Avukat Şeyma OSMANİYE, 1994 doğumludur. Yalova Üniversitesi Hukuk Fakültesi’nde hukuk eğitimi almıştır. Hukuk fakültesinden 2016 yılında mezun olmuştur. 2016 yılında yaptığı avukatlık stajının ardından kurduğu hukuk bürosuyla 2017 yılından beri Bursa'da serbest avukatlık ve uzlaştırmacılık yapmaktadır. 2017 yılından itibaren Bursa Barosu'nun çeşitli komisyonlarında aktif olarak görev almıştır.  Çeşitli sivil toplum örgütlerine üye olarak hukuk çalışmaları yürütmüştür. Sigorta hukuku  alanında meslek içi eğitim seminerleri almıştır.Arabuluculuk ve uzlaştırma eğitimleri almıştır.Kişisel Verişerin Korunması Kanunu uygulaması ve işletmelere etkisi eğitim sertifikası almıştır. Avukat Şeyma OSMANİYE, kurduğu avukatlık bürosuyla Sigorta Hukuku ve Ceza Hukuku başta olmak üzere birçok hukuk alanında avukatlık faaliyeti yürütmektedir. Sigorta hukuku ve bundan kaynaklanan uyuşmazlıklar ile ilgili süreçleri yönetmektedir.
+                    </p>
+                </div>
+            </div>
+            <br /><br />
+            <div class="row gx-4 gx-lg-5">
+                <div>
+                    <p>
+                        Avukat-müvekkil ilişkileri karşılıklı güven esasına dayanmaktadır. Avukat  Ayşe Nur GÜLSAR ve Av.Şeyma Osmaniye, hukukun ve avukatlık mesleğinin hak arama özgürlüğünün en önemli güvence mekanizması olduğu bilinciyle, avukat-müvekkil arasında temel mesleki ilkelere hassasiyet göstermektedir.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section" id="calculate">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <h2 class="mt-0">Hemen Değer Kaybınızı Hesaplayın!</h2>
+                    <hr class="divider" />
+
+                </div>
+            </div>
+            @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+            {
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                    <div class="col-lg-6">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Name input-->
+                            <div class="form-group mb-3" data-sb-validations="required">
+                                @Html.TextBoxFor(x => x.NameSurname, new { @placeholder = "Adınızı Ve Soyadınızı Giriniz:", @class = "form-control" })
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Lütfen adınızı ve soyadınızı giriniz.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-group mb-3" data-sb-validations="required,email">
+                                @Html.TextBoxFor(x => x.Email, new { placeholder = "Emailinizi Giriniz:", @class = "form-control" })
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Lütfen geçerli email giriniz.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-group mb-3" data-sb-validations="required">
+                                @Html.TextBoxFor(x => x.Telephone, new { placeholder = "Telefonunuzu Giriniz:", @class = "form-control" })
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">Lütfen telefon numaranızı giriniz.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-group mb-3" data-sb-validations="required">
+                                @Html.TextBoxFor(x => x.CarModel, new { @placeholder = "Araç Modelinizi Giriniz:", @class = "form-control" })
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Lütfen araç modeli giriniz.</div>
+                            </div>
+                            <div class="form-group mb-3" data-sb-validations="required">
+                                @Html.TextBoxFor(x => x.CarYear, new { @placeholder = "Aracınızın Yılını Giriniz:", @class = "form-control" })
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Lütfen araç yılını giriniz.</div>
+                            </div>
+                            <div class="form-group mb-3" data-sb-validations="required">
+                                @Html.TextBoxFor(x => x.CarKm, new { @placeholder = "Aracınızın Kilometresini Giriniz:", @class = "form-control" })
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Lütfen aracınızın kilometresini giriniz.</div>
+                            </div>
+                            <div class="form-group mb-3" data-sb-validations="required">
+                                @Html.TextBoxFor(x => x.CarCrash, new { @placeholder = "Aracınızın Hasar Bedelini Giriniz:", @class = "form-control" })
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Lütfen hasar bedelini giriniz.</div>
+                            </div><!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Formunuz Gönderildi!</div>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button-->
+                            <div class="d-grid"><button class="btn btn-primary btn-xl " onclick="showContent()">Hesapla</button></div>
+                        </form>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </section>
+    <section class="page-section bg-warning" id="contact">
+        <div class="container h-50">
+            <div class="row">
+                <div class="col-sm text-center">
+                    <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                    <p>+90 (507) 487 74 16</p>
+                </div>
+                <div class="col-sm text-center ">
+                    <a href="https://www.instagram.com/aracdegerkaybi16/">
+                        <i class="bi-instagram fs-2 mb-3 text-muted"></i>
+                    </a>
+                    <p>Aracdegerkaybi16</p>
+                </div>
+                <div class="col-sm text-center">
+                    <a href="https://www.facebook.com/ADK-Dan%C4%B1%C5%9Fmanl%C4%B1k-100233976173891">
+                        <i class="bi-facebook fs-2 mb-3 text-muted"></i>
+                    </a>
+                    <p>ADK Danışmanlık</p>
+                </div>
+                <div class="col-sm text-center">
+                    <a href="https://www.youtube.com/channel/UCvpa1RgiclP8D9sXID7hTLA">
+                        <i class="bi-youtube fs-2 mb-3 text-muted"></i>
+                    </a>
+                    <p>ADK Danışmanlık</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="bg-light py-xl-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-12">
+                    <h4>Hizmetler</h4>
+                    <br /><br />
+                    <div class="row">
+                        <div class="col-lg-4 list-group">
+                            <a href="/Home/Services#1" class="list-group-item list-group-item-action">Araç Değer Kaybı</a>
+                            <a href="/Home/Services#2" class="list-group-item list-group-item-action">Red Hasar Ödemeleri</a>
+                            <a href="/Home/Services#3" class="list-group-item list-group-item-action ">Pert Araç Ara Farkları</a>
+
+                        </div>
+                        <div class="col-lg-4 list-group">
+                            <a href="/Home/Services#4" class="list-group-item list-group-item-action">Kusur Dağılımı Değişimleri</a>
+                            <a href="/Home/Services#5" class="list-group-item list-group-item-action">Yaralanmalı Trafik Kazaları, Sürekli Sakatlık ve Geçici İş Göremezlik</a>
+                            <a href="/Home/Services#6" class="list-group-item list-group-item-action">Destekten Yoksun Kalma</a>
+                            <a href="/Home/Services#7" class="list-group-item list-group-item-action">İş Yeri ve Konut Sigortaları</a>
+                        </div>
+                        <div class="col-lg-4 list-group">
+                            <a href="/Home/Services#8" class="list-group-item list-group-item-action">Hayat Poliçesi, Ferdi Kaza Sigortası ve Tedavi Giderleri</a>
+                            <a href="/Home/Services#9" class="list-group-item list-group-item-action"> Hayvan Sigortası ve Hayvan Tedavi Giderleri</a>
+                            <a href="/Home/Services#10" class="list-group-item list-group-item-action">Tarım Sigortası</a>
+                            <a href="/Home/Services#11" class="list-group-item list-group-item-action">Deniz Taşıtları</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <h4>Kurumsal</h4>
+                    <br /><br />
+                    <div class="list-group">
+                        <a href="#whoweare" class="list-group-item list-group-item-action">Hakkımızda</a>
+                        <a href="/Home/Kisisel_Verilerin_Korunması" class="list-group-item list-group-item-action">Kişisel Verilerin Korunması Kanunu</a>
+                        <a href="/Home/Kisisel_Veri_Saklama" class="list-group-item list-group-item-action">Kişisel Veri Saklama ve İmha Politikası</a>
+                        <a href="/Home/Ozel_Nitelik" class="list-group-item list-group-item-action">Özel Nitelikli Veri Saklama ve İmha Politikası</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - ADK Danışmanlık</div></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/startbootstrap-creative-gh-pages/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="~/startbootstrap-creative-gh-pages/js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
+<script>
+    function showContent() {
+        alert("Bilgileriniz alınmıştır. Uzman ekiplerimiz tarafından geri dönüş sağlanacaktır.")
+    }
+</script>
+

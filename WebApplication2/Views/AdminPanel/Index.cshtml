@@ -1,0 +1,34 @@
+﻿@using EntityLayer.Concrete
+@model List<Form>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Formları Listele</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>Ad Soyad</th>
+        <th>Email</th>
+        <th>Telefon</th>
+        <th>Araç Modeli</th>
+        <th>Araç Yılı</th>
+        <th>Araç Kilometresi</th>
+        <th>Araç Hasar Bedeli</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.NameSurname</td>
+            <td>@item.Email</td>
+            <td>@item.Telephone</td>
+            <td>@item.CarModel</td>
+            <td>@item.CarYear</td>
+            <td>@item.CarKm</td>
+            <td>@item.CarCrash</td>
+            <td><a href="/AdminPanel/DeleteForm/@item.FormId" class="btn btn-danger">Sil</a></td>
+        </tr>
+    }
+</table>
+<br />
+

@@ -1,0 +1,27 @@
+﻿@model EntityLayer.Concrete.Mechanic
+@{
+    ViewBag.Title = "EditMechanic";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Kaportacı Düzenle</h2>
+<br />
+@using (Html.BeginForm("EditMechanic", "AdminPanel", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.Label("Id")
+        @Html.TextBoxFor(x => x.MechanicId, new { @class = "form-control" })
+        <br />
+        @Html.Label("Kullanıcı Adı:")
+        @Html.TextBoxFor(x => x.MechanicUserName, new { @class = "form-control" })
+        <br />
+        @Html.Label("Şifre:")
+        @Html.TextBoxFor(x => x.MechanicPassword, new { @class = "form-control" })
+        <br />
+        @Html.Label("Telefon Numarası:")
+        @Html.TextBoxFor(x => x.MechanicPhone, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-warning">Kaydet</button>
+    </div>
+}
+

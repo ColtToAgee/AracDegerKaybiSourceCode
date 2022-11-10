@@ -1,0 +1,24 @@
+﻿@model EntityLayer.Concrete.Mechanic
+@{
+    ViewBag.Title = "AddMechanic";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Kaportacı Ekle</h2>
+<br />
+@using (Html.BeginForm("AddMechanic", "AdminPanel", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.Label("Kullanıcı Adı:")
+        @Html.TextBoxFor(x => x.MechanicUserName, new { @class = "form-control" })
+        <br />
+        @Html.Label("Şifre:")
+        @Html.TextBoxFor(x => x.MechanicPassword, new { @class = "form-control" })
+        <br />
+        @Html.Label("Telefon Numarası:")
+        @Html.TextBoxFor(x => x.MechanicPhone, new { @class = "form-control" })
+        <br />
+
+        <button class="btn btn-warning">Kaydet</button>
+    </div>
+}

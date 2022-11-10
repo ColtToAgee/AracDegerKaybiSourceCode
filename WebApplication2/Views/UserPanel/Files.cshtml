@@ -1,0 +1,26 @@
+﻿@using EntityLayer.Concrete
+@model List<MyFile>
+@{
+    ViewBag.Title = "Files";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Dosyaları Listele</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Dosya İsmi</th>
+        <th>Dosyanın Müşterisi</th>
+        <th>İndir</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.MyFileName</td>
+            <td>@item.User.Mechanic.MechanicUserName</td>
+            <td>@item.User.Username</td>
+            <td><a href="/UserPanel/Download/@item.FileId" class="btn btn-warning">İndir</a></td>
+        </tr>
+    }
+</table>
+

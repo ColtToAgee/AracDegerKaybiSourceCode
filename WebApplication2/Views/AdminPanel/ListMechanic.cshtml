@@ -1,0 +1,29 @@
+﻿@using EntityLayer.Concrete
+@model List<Mechanic>
+@{
+    ViewBag.Title = "ListMechanic";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Kaportacıları Listele</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Kullanıcı Adı</th>
+        <th>Şifre</th>
+        <th>Telefon Numarası</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.MechanicUserName</td>
+            <td>@item.MechanicPassword</td>
+            <td>@item.MechanicPhone</td>
+            <td><a href="/AdminPanel/ListUsersByMechanic/@item.MechanicId" class="btn btn-primary">Müşteriler</a></td>
+            <td><a href="/AdminPanel/DeleteMechanic/@item.MechanicId" class="btn btn-danger">Sil</a></td>
+            <td><a href="/AdminPanel/EditMechanic/@item.MechanicId" class="btn btn-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<br />
+<a href="/AdminPanel/AddMechanic" class="btn btn-warning">Yeni Kaportacı Ekle</a>

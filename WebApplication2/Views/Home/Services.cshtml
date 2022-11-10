@@ -1,0 +1,715 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Hizmetler</title>
+    <link rel="icon" type="image/x-icon" href="~/colorlib-regform-3/images/logo.ico" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="~/AdminLTE-3.0.4/plugins/fontawesome-free/css/all.min.css">
+    <!-- IonIcons -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/AdminLTE-3.0.4/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to to the body tag
+to get the desired effect
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <!-- /.navbar -->
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-light-orange" style="position:fixed;">
+            <!-- Brand Logo -->
+            <a href="/Home/Index" class="brand-link">
+                <img src="~/colorlib-regform-3/images/logo.png" class="brand-image">
+                <span class="brand-text font-weight-light">Danışmanlık</span>
+            </a>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="info">
+                        <a href="/Home/Services" class="d-block font-weight-bold">Hizmetler</a>
+                    </div>
+                </div>
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                        with font-awesome or any other icon font library -->
+                        <li class="nav-item">
+                            <a href="#1" class="nav-link ">
+                                <i class="nav-icon fas fa-car-crash"></i>
+                                <p>
+                                    Araç Değer Kaybı
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#2" class="nav-link ">
+                                <i class="nav-icon fas fa-wrench"></i>
+                                <p>
+                                    Red Hasar Ödemeleri
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#3" class="nav-link ">
+                                <i class="nav-icon fas fa-car-alt"></i>
+                                <p>
+                                    Pert Araç Ara Farkları
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#4" class="nav-link ">
+                                <i class="nav-icon fas fa-traffic-light"></i>
+                                <p>
+                                    Kusur Dağılımı Değişimleri
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#5" class="nav-link ">
+                                <i class="nav-icon fas fa-hospital"></i>
+                                <p>
+                                    Yaralanmalı Trafik Kazaları
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#6" class="nav-link ">
+                                <i class="nav-icon fas fa-hand-holding-medical"></i>
+                                <p>
+                                    Destekten Yoksun Kalma
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#7" class="nav-link ">
+                                <i class="nav-icon fas fa-desktop"></i>
+                                <p>
+                                    İş Yeri ve Konut Sigortaları
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#8" class="nav-link ">
+                                <i class="nav-icon fas fa-hand-holding-heart"></i>
+                                <p>
+                                    Hayat Poliçesi
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#9" class="nav-link ">
+                                <i class="nav-icon fas fa-dog"></i>
+                                <p>
+                                    Hayvan Sigortası
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#10" class="nav-link ">
+                                <i class="nav-icon fas fa-tractor"></i>
+                                <p>
+                                    Tarım Sigortası
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#11" class="nav-link ">
+                                <i class="nav-icon fas fa-ship"></i>
+                                <p>
+                                    Deniz Taşıtları
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Main content -->
+            <div class="content">
+                <br /><br />
+                <section id="1" style="
+                         padding-top: 10rem;
+                         padding-bottom: calc(10rem - 4.5rem);
+                         background: linear-gradient(to bottom, rgba(92, 77, 66, 0) 0%, rgba(92, 77, 66, 0) 100%), url(../../colorlib-regform-3/images/araba-kaza-1.jpg);
+                         background-position: center;
+                         background-repeat: no-repeat;
+                         background-attachment: scroll;
+                         background-size: cover;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="page-title-inner">
+                                    <div class="title">
+                                        <h2 class="font-weight-bold" style="color:white;">Araç Değer Kaybı</h2>
+                                    </div>
+                                    <p class="font-weight-bold" style="color:white;">
+                                        "Araç değer kayıplarınızda profesyonel süreçlerinizi sorunsuz işletiyoruz. Evraklarınızı tamamlıyor, hesaplamanızı yapıyoruz."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section class="page-section">
+                    <div class="container px-4 px-lg-5 h-100">
+                        <div class="row gx-4 gx-lg-5">
+                            <h1 style="font-family:'Times New Roman'">Araç Değer Kaybı Nedir?</h1>
+                            <br /><br /><br /><br />
+                            <p class="font-weight-normal">
+                                Araç değer kaybı, hasar gören aracın durumunu niteleyen bir kavramdır. Araç değer kaybı, hasar alarak onarım gören aracın ikinci el piyasa değerindeki düşüşü ifade eder. Kaza geçirip hasar gören araç, en iyi şekilde tamir edilmiş olsa bile değerinde bir düşüş olacaktır.
+                                <br /><br />
+                                Ancak kaza nedeniyle boya işlemi gören bir araç parçasının tekrar bir kaza geçirmesi sonrası tekrar değer kaybı olmazken; hasarlı parçanın değiştirilmesi değer kaybına neden olabilir.
+                                <br /><br />
+                                Örneğin kazadan önce eğer araç 50.000 TL’de alıcı bulabiliyor fakat kaza sonrası yapılan tamire rağmen hasar kaydı nedeniyle oluşan kayıptan ötürü artık aracın fiyatı 45.000 TL’ye düşüyor ise aradaki 5.000 TL fark araçtaki değer kaybının miktarı oluyor.
+                                <br /><br />
+                                Bu durum aracın satılmasını zorlaştırır ve 2. El satış değerini düşürdüğü için maddi değer kaybı yaşatır. Araç değer kaybı tazminatı ile, araç sahiplerinin, kusurlu olmadıkları hasarlar ile ilgili, bu mağduriyetlerinin giderilmesi amaçlanmaktadır. Sahibi olduğunuz aracınız herhangi bir trafik kazasına karışmışsa aracınızda meydana gelen maddi hasarlar sigorta poliçelerinden karşılanmaktadır.
+                                <br /><br />
+                                Ancak sigorta şirketleri kaza sonucu doğan hasarların onarım giderlerini araç sahiplerine yahut yetkili servise ödemekte ancak aracın kaza sebebi ile uğradığı değer kaybı ile ilgili tazminatları araç sahipleri tarafından talep olmadığı müddetçe ödemekten kaçınmaktadır.
+                                <br /><br />
+                                Siz de uğradığınız trafik kazası sonucunda aracınızın değer kaybettiğini düşünüyorsanız “aracınızın değer kaybı tazminatını” karşı taraftan alma hakkınız bulunmaktadır. Bu tazminatın tutarı ise hasarın niteliği aracın yılı, kilometresi marka ve modeli kasko değerine göre değişik hesaplama kıstasları ile hesap edilmekte ve genellikle piyasadaki reel alım satım durumlarına uygunluk göstermektedir.
+                            </p>
+                            <h3 style="font-family:'Times New Roman'">Araç Değer Kaybı Nasıl Hesaplanır?</h3>
+                            <br /><br />
+                            <p class="font-weight-normal">
+                                Araç değer kaybı hesaplamasında etkisi bulunan pek çok değişken vardır. Değişkenlerin bazıları araç, bazılarıysa araç kullanım şekliyle ilgilidir. Bu değişkenler aşağıdaki şekilde sıralanabilir:
+                                <br /><br />
+                                Üretim yılı<br />
+                                Hasar geçmişi ve niteliği<br />
+                                Kilometresi<br />
+                                Marka ve model bilgisi<br />
+                                Trafiğe çıkış tarihi<br />
+                                Pazar değeri bu hesaplamaya etki eden faktörlerden bazılarıdır.<br />
+                            </p>
+                            <h3 style="font-family:'Times New Roman'">Araç Değer Kaybı Nasıl Karşılanır?</h3>
+                            <br /><br />
+                            <p class="font-weight-normal">
+                                Kazada kusuru bulunmayan sürücünün araç değer kaybını karşılayacak taraf kazaya neden olan sürücüdür. Bu nedenle araç değer kaybının karşılanması aşamasında trafik sigortası devreye girecektir.
+                                <br /><br />
+                                Aracınızdaki değeri karşılamak için ekspertiz raporu alarak değer kaybına neden olan kişiye dava açabilirsiniz. Araç değer kaybının tahsisi esnasında sigorta şirketinin sorun çıkarması durumunda araç değer kaybını gösteren ekspertiz raporu ile Sigorta Tahkim Komisyonu’na başvuru yapabilirsiniz.
+                            </p>
+                            <h3 style="font-family:'Times New Roman'">Araç Değer Kaybı Davalarında Zaman Sınırı Var mı?</h3>
+                            <br /><br />
+                            <p class="font-weight-normal">
+                                Araç değer kaybının tahsisi için dava açabileceğiniz süre 2 yıl ile sınırlıdır. Zaman aşım süresi için kazanın gerçekleştiği tarih baz alınır. Aracınızdaki değer kaybının tahsisi için 2 yıl içerisinde araç değer kaybı davası açmanız gerekir.
+                            </p>
+                            <h3 style="font-family:'Times New Roman'">Kasko Araç Değer Kaybını Karşılar mı?</h3>
+                            <br /><br />
+                            <p class="font-weight-normal">
+                                Kaza nedeniyle araç değer kaybına uğrayan araç tek olmayabilir. Kazada sorumluluğu bulunan kişilerin aracında da değer kaybı meydana gelebilir. Ancak trafik sigortası tek bir kişinin araç değer kaybını karşılar, bu kişi kazada sorumluluğu bulunmayan veya sorumluluk oranı az olan kişidir. Kazaya neden olan kişilerin güvencesi ise kasko sigortası olacaktır.
+                                <br /><br />
+                                Kasko ve araç değer kaybı ilişkisine bakıldığında; genellikle kasko poliçeleri, onarım nedeniyle ortaya çıkan araç değer kayıplarını teminat altına almaz. Bu nedenle de kasko sigortasından talepte bulunulamaz. Ancak bazı sigorta şirketleri, kasko kapsamında araç değer kaybı güvencesine de yer vermektedir.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="2" style="
+                         padding-top: 10rem;
+                         padding-bottom: calc(10rem - 4.5rem);
+                         background: linear-gradient(to bottom, rgba(92, 77, 66, 0) 0%, rgba(92, 77, 66, 0) 100%), url(../../colorlib-regform-3/images/araba-kaza-2.jpg);
+                         background-position: center;
+                         background-repeat: no-repeat;
+                         background-attachment: scroll;
+                         background-size: cover;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="page-title-inner">
+                                    <div class="title">
+                                        <h2 class="font-weight-bold" style="color:white;">Red Hasar Ödemeleri</h2>
+                                    </div>
+                                    <p class="font-weight-bold" style="color:white;">
+                                        "Bir trafik kazası sonrasında aracınızda hasar oluşmuş olabilir. Kazada ki kusur durumuna göre sizin veya karşı tarafın zorunlu trafik sigortası kapsamında aracınızın hasarı zorunlu trafik sigortası kapsamında onarılmaktadır."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section class="page-section">
+                    <div class="container px-4 px-lg-5 h-100">
+                        <div class="row gx-4 gx-lg-5">
+                            <h1 style="font-family:'Times New Roman'">Red Hasar Ödemesi Nedir?</h1>
+                            <br /><br /><br /><br />
+                            <p class="font-weight-normal">
+                                Bir trafik kazası sonrasında aracınızda hasar oluşmuş olabilir. Kazada ki kusur durumuna göre sizin veya karşı tarafın zorunlu trafik sigortası kapsamında aracınızın hasarı zorunlu trafik sigortası kapsamında onarılmaktadır.  Kusurlu tarafın aracının onarımı zorunlu trafik sigortası kapsamında karşılanmamaktadır. Bu aracın kaskosu varsa ancak kaskosu tarafından yaptırılabilmektedir.
+                                <br /><br />
+                                Çeşitli nedenlerle sigorta şirketleri zaman zaman zorunlu trafik sigortası, kasko veya iş yeri sigortası kapsamında ki hasar ödemelerini karşılamamaktadır. Buna sebep olarak çeşitli argümanlar ortaya koyabilmektedir.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section id="3" style="
+                         padding-top: 10rem;
+                         padding-bottom: calc(10rem - 4.5rem);
+                         background: linear-gradient(to bottom, rgba(92, 77, 66, 0) 0%, rgba(92, 77, 66, 0) 100%), url(../../colorlib-regform-3/images/araba-kaza-3.jpg);
+                         background-position: center;
+                         background-repeat: no-repeat;
+                         background-attachment: scroll;
+                         background-size: cover;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="page-title-inner">
+                                    <div class="title">
+                                        <h2 class="font-weight-bold" style="color:white;">Pert Araç Ara Farkları</h2>
+                                    </div>
+                                    <p class="font-weight-bold" style="color:white;">
+                                        Bir kaza sonucunda aracın %70 ve daha fazlasının hasar görmesi ve aracın onarım masraflarının sigorta değerine yakın olması onun “pert araç” olduğunu gösterir.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section class="page-section">
+                    <div class="container px-4 px-lg-5 h-100">
+                        <div class="row gx-4 gx-lg-5">
+                            <h1 style="font-family:'Times New Roman'">Pert Araç Nedir?</h1>
+                            <br /><br /><br /><br />
+                            <p class="font-weight-normal">
+                                Bir kaza sonucunda aracın %70 ve daha fazlasının hasar görmesi ve aracın onarım masraflarının sigorta değerine yakın olması onun “pert araç” olduğunu gösterir. Kullanılmaz hale gelen araç doğrudan tam hasarlı konumuna düşer.
+                                <br /><br />
+                                Bu tip bir hasarla karşı karşıya kalındığında yapılması gereken birkaç işlem bulunuyor. Öncelikle sigorta sahibi beş iş günü içinde sigorta şirketine durumu bildirmelidir. Ayrıca aracın eksper tarafından incelenmesini talep etmelidir. Beş iş gününü geçirdiğiniz takdirde sigorta sorumluluk almaz.
+                            </p>
+                            <h3 style="font-family:'Times New Roman'">Pert Araç Ödemesi Nedir?</h3>
+                            <br /><br />
+                            <p class="font-weight-normal">
+                                Eğer aracınız eksper raporu tarafından perte çıkmış olarak nitelendirilirse sigorta şirketinin, sigortalıya poliçede belirtilen teminat bedeli kadar ödeme yapması gerekir. Bu tutar sigorta poliçesinde belirlenen tutardan daha yüksek olmayacak şekilde aracınızın piyasa değerine eşittir.  Ayrıca eğer sigorta şirketi aracın değerince ödeme yaparsa, araç sigorta şirketinin olur.
+                                <br /><br />
+                                Sigortacı, hasar ihbarı üzerine talep ettiği belgelerin kendisine eksiksiz olarak verilmesi ve zararın eksper vasıtasıyla tespiti kararlaştırılması ile eksperin, raporu teslim etmesinden itibaren en geç 10 iş günü içinde tazminat miktarı tespit edilip, sigortalıya ödenmesi gerekir. Ayrıca tazminatların ödenmesi, hasarın ihbar edildiği tarihten itibaren her durumda 45 gün içinde sigortalıya ödenmek zorundadır.
+                                <br /><br />
+                                İncelemeler sigortalının hasar ihbarı yaptığı tarihten sonra üç ay içinde tamamlanamamışsa; sigortacının, tarafların mutabakatı veya anlaşmazlık halinde mahkemece yaptırılacak ön ekspertiz sonucuna göre tespit edilecek hasar miktarının en az yüzde ellisini avans olarak sigortalıya ödemesi zorunludur.
+                            </p>
+                            <h3 style="font-family:'Times New Roman'">Pert Araç Ara Farkı Nedir?</h3>
+                            <br /><br />
+                            <p class="font-weight-normal">
+                                Araç perte ayrıldıktan sonra yasal süreler içerisinde ve gerekli başvuru süreci işletildikten sonra başvuru yapılmalıdır. Buna müteakiben sigorta şirketleri gerekli hesaplamaları yaptıktan sonra mağdurun ödemesini tam olarak yapmakla yükümlüdür.
+                                <br /><br />
+                                Ama her zaman süreç böyle işlemiyor. Sigorta şirketleri pert aracın rayiç bedelini tam almadığı ve piyasa değerinden çok aşağı hesapladığı durumlarda aracın pert değerinide eksik hesaplamış oluyor. Bu hesap neticesinde de eksik ödeme yapabiliyor. İşte bu durumlarda aracınızın pert değerinin eksik ödendiğini düşünüyorsanız hemen vakit kaybetmeden bize ulaşın. Essa Danışmanlık profesyonel personeliyle sizin adınıza çalışmasını yapsın ve hukuki süreçleri işleterek pert aracınızın ara farkını alsın.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="4" style="
+                         padding-top: 10rem;
+                         padding-bottom: calc(10rem - 4.5rem);
+                         background: linear-gradient(to bottom, rgba(92, 77, 66, 0) 0%, rgba(92, 77, 66, 0) 100%), url(../../colorlib-regform-3/images/araba-kaza-4.jpg);
+                         background-position: center;
+                         background-repeat: no-repeat;
+                         background-attachment: scroll;
+                         background-size: cover;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="page-title-inner">
+                                    <div class="title">
+                                        <h2 class="font-weight-bold" style="color:white;">Kusur Dağılımı Değişimleri</h2>
+                                    </div>
+                                    <p class="font-weight-bold" style="color:white;">
+                                        Kaza kusur oranları Tramer yardımıyla belirlenmektedir. Kusur oranının belirlenmesi ile ilgili detaylara geçmeden önce ‘’Tramer’’ hakkında bilgi vermek yerinde olacaktır.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section class="page-section">
+                    <div class="container px-4 px-lg-5 h-100">
+                        <div class="row gx-4 gx-lg-5">
+                            <h1 style="font-family:'Times New Roman'">Kazalarda Kusur Oranı Hesaplaması Nasıl Olur?</h1>
+                            <br /><br /><br /><br />
+                            <p class="font-weight-normal">
+                                Kaza kusur oranları Tramer yardımıyla belirlenmektedir. Kusur oranının belirlenmesi ile ilgili detaylara geçmeden önce ‘’Tramer’’ hakkında bilgi vermek yerinde olacaktır. Trafik Sigortaları Bilgi Merkezi yani Tramer, Hazine Müsteşarlığına bağlı bir kuruluştur. Tramer’in amacı; trafikte bulunan araçlar için yapılabilecek araç sigortaları dalında, bilgileri tek bir elde toplamak, sağlıklı sigorta fiyatları sunulmasına destek olmak ve sigortacılık faaliyetlerinin etkin bir şekilde gerçekleştirilmektir. Böylece sigorta sektörüne olan güvenin yükseltilmesi ve yararının arttırılması hedeflenmiştir.
+                                <br /><br />
+                                Hazine Müsteşarlığı, sadece maddi hasar ile sonuçlanan kazaların kaza tespit tutanağı ile düzenlenmesini yeterli görmüştür. Bu tutanak kazaya karışan araç sahipleri veya sürücülerin, kazanın oluşmasında ne kadar kusurlu olduklarını gözler önüne sermektedir. Üstelik artık mobil kaza tespit tutanağı sayesinde tutanağı doldurmak çok daha kolaylaştı. Sigorta şirketlerinin kaza tespit tutanaklarının Tramere girişiyle, hasar ödenme süreci başlamış olur. Araç sürücülerinin kazadaki kusur oranları %0, 50 ve %100 arasında görülür.
+                            </p>
+                            <h3 style="font-family:'Times New Roman'">Kazalarda Kusur Oranı Belirleme İşlemi?</h3>
+                            <br /><br />
+                            <p class="font-weight-normal">
+                                Kazalarda kusur oranı belirleme aşamaları aşağıdaki gibidir:
+                                <br /><br />
+                                Kaza tutanakları ve kazanın boyutunu gösteren fotoğraflar sigorta şirketine ulaştığında, 3 iş günü içerisinde bir değerlendirme yapılır, belirlenen kusur oranı Tramer’e iletilir.<br />
+                                Taraflar kusur oranına itiraz etmek isterlerse 5 iş günü içerisinde sigorta şirketine başvurmaları gerekir. 5 iş günü içerisinde itiraz edilmediği takdirde kusur oranı kabul edilmiş sayılır.<br />
+                                Tramer, sigorta şirketinin değerlendirmesiyle aynı fikirde olursa durumdan sigorta şirketini haberdar eder. Sigorta şirketlerinin uzlaşamaması halinde, Tramer içerisinde işleyen Tutanak Değerlendirme Komisyonu’na başvuru yapılır.<br />
+                                Durumu bir kez de Tutanak Değerlendirme Komisyonu değerlendirir ve karara vararak sigorta şirketine bildirir.<br />
+                                2014 Haziran Ayı’nda Hazine Müsteşarlığı’nın yeni genelgesiyle maddi hasarlı kazalar için doldurulması gereken kaza tespit tutanaklarında değişikliğe gidilmiştir. Bu yeni genelgeye göre; sigortalı 2 gün içerisinde itiraz etme hakkını kullanmadıysa yahut itiraz hakkı kabul edilmemişse, sigortalılar kusur oranlarına ilişkin itirazlarını Sigorta Tahkim Komisyon’una yapabilmektedir.<br />
+                            </p>
+                            <h3 style="font-family:'Times New Roman'">Kusur Dağılımını Değiştirmek Mümkün müdür?</h3>
+                            <br /><br />
+                            <p class="font-weight-normal">
+                                Hatalı olduğu düşünülen ve bunu temellendirebilecek deliller ortaya konulabilen kusur dağılımları uygun yöntemlerle başvuru yapıldığı takdirde değiştirilebilir. Uygun deliller ise Essa Danışmanlığın tecrübeli Trafik Bilirkişilerinin araştırmaları sonucunda elde edilebilir.
+                                <br /><br />
+                                Peki Trafik Bilirkişilerimiz neleri inceler?
+                                <br /><br />
+                                Kaza Yerinin Fiziksel Durumu<br />
+                                Trafik İşaret ve Levhaları<br />
+                                Kaza Yerinde Kimlerin Olup-Olmadığı<br />
+                                Görgü Tanıkları<br />
+                                Gerekli İz ve Deliller<br />
+                                Kazanın Oluşmasını Ortaya Çıkaran Sebepler<br />
+                                Varsa Takograf Verileri<br />
+                                ve dahası…<br />
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section id="5" style="
+                         padding-top: 10rem;
+                         padding-bottom: calc(10rem - 4.5rem);
+                         background: linear-gradient(to bottom, rgba(92, 77, 66, 0) 0%, rgba(92, 77, 66, 0) 100%), url(../../colorlib-regform-3/images/araba-kaza-55.jpg);
+                         background-position: center;
+                         background-repeat: no-repeat;
+                         background-attachment: scroll;
+                         background-size: cover;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="page-title-inner">
+                                    <div class="title">
+                                        <h2 class="font-weight-bold" style="color:white;">Yaralanmalı Trafik Kazaları, Sürekli Sakatlık ve Geçici İş Göremezlik</h2>
+                                    </div>
+                                    <p class="font-weight-bold" style="color:white;">
+                                        Karayolları Trafik Zorunlu Mali Sorumluluk Sigortası, poliçede belirtilen aracın kullanımı sırasında bir kimsenin ölümüne, yaralanmasına veya üçüncü şahıslara ait malların zarara uğramasına sebebiyet verildiği durumlarda devreye girer.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section class="page-section">
+                    <div class="container px-4 px-lg-5 h-100">
+                        <div class="row gx-4 gx-lg-5">
+                            <h1 style="font-family:'Times New Roman'">Yaralanmalı Trafik Kazası Tazminatı Nedir?</h1>
+                            <br /><br /><br /><br />
+                            <p class="font-weight-normal">
+                                Karayolları Trafik Zorunlu Mali Sorumluluk Sigortası (Trafik Sigortası), poliçede belirtilen aracın kullanımı sırasında bir kimsenin ölümüne, yaralanmasına veya üçüncü şahıslara ait malların zarara uğramasına sebebiyet verildiği durumlarda devreye girer. Trafik sigortası böyle bir durumda aracın kullanıcısına düşen hukuki sorumluluğu Hazine Müsteşarlığı‘nca saptanmış ve poliçede belirtilmiş sigorta limitlerine kadar temin eder. Anlaşılacağı üzere bu teminat sadece araç, bina, bariyer, trafik lambası vb. maddi zararları değil, olası bedeni zararları da kapsamaktadır.
+                                <br /><br />
+                                Yaralanmalı trafik kazası sonucunda yaralanan kişi, kazaya uğrayarak yaralandığı tarihten iyileşene kadar ya da iyileşemeyecek durumda olması halinde de hekimlerce öngörülen tedavi, süresi boyunca gördüğü tedavi, ameliyat, bakıcı giderleri, tedavi süresince çalışmadığı aylara ilişkin kazanç kaybı gibi tüm gider ve masraflarını talep edebilir.
+                                <br /><br />
+                                Yaralanmalı trafik kazasında kişinin, maddi tazminatın dışında ayrıca manevi tazminat ta talep etme hakkına sahiptir. Kişide trafik kazası sonrasında psikolojik travma, derin üzüntü gibi ruh dünyasında sarsıcı etkiler oluştuysa manevi tazminat talep edebilir. Yaralanmalı ve/veya sakatlanmalı trafik kazalarında zaman aşımı süresi kazanın olduğu tarihten itibaren 8 yıldır. Trafik kazası maddi ve manevi tazminatının 8 yıllık süre içinde talep edilmesi gerekir.
+                            </p>
+                            <h3 style="font-family:'Times New Roman'">Yaralanmalı Trafik Kazası Dikkat Edilecek Hususlar</h3>
+                            <br /><br />
+                            <p class="font-weight-normal">
+                                8 Yıl geriye dönük olarak alınabilir.<br />
+                                Kişinin yaşı, mesleği, çocuk sayısı, geliri, medeni durumu, eş geliri(AGİ belirlenmesi için) bilgileri ile hesaplama yapılır.<br />
+                                Maluliyet oranı hesaba dahil edilir.<br />
+                                Trafik sigortası teminatları dahilinde sürekli sakatlık tazminatı alınabilir.<br />
+                                Bakıcı gideri alabilmek için %70 ve üzeri sürekli sakatlık oranı olması gerekir.<br />
+                                İş göremezlik raporu varsa yasal süreç(tahkim) içerisinde talep edilebilir.<br />
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section id="6" style="
+                         padding-top: 10rem;
+                         padding-bottom: calc(10rem - 4.5rem);
+                         background: linear-gradient(to bottom, rgba(92, 77, 66, 0) 0%, rgba(92, 77, 66, 0) 100%), url(../../colorlib-regform-3/images/araba-kaza-5.jpg);
+                         background-position: center;
+                         background-repeat: no-repeat;
+                         background-attachment: scroll;
+                         background-size: cover;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="page-title-inner">
+                                    <div class="title">
+                                        <h2 class="font-weight-bold" style="color:white;">Destekten Yoksun Kalma</h2>
+                                    </div>
+                                    <p class="font-weight-bold" style="color:white;">
+                                        Destekten Yoksun Kalma Tazminatı Trafik kazasında ölen kişinin yakınları (anne, baba, eş, çocuklar, nişanlı veya destek verdiği herhangi bir kişi) kaza nedeniyle destekten yoksun kalma tazminatı talep edebilirler.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section class="page-section">
+                    <div class="container px-4 px-lg-5 h-100">
+                        <div class="row gx-4 gx-lg-5">
+                            <h1 style="font-family:'Times New Roman'">Ölümlü Trafik Kazası Tazminatı Nedir?</h1>
+                            <br /><br /><br /><br />
+                            <p class="font-weight-normal">
+                                Destekten Yoksun Kalma Tazminatı Trafik kazasında ölen kişinin yakınları (anne, baba, eş, çocuklar, nişanlı veya destek verdiği herhangi bir kişi) kaza nedeniyle destekten yoksun kalma tazminatı talep edebilirler. Destekten yoksun kalma tazminatı, ölenin hayat boyu desteğinden mahrum kalan kişilerin açtığı bir maddi tazminat davası türüdür. Destekten yoksun kalanlar, muhtemel destek süresi boyunca ölenden elde edecekleri mali menfaati tazminat sorumlularından talep edebilir.
+                                <br /><br />
+                                15 Yıl geriye dönük alınabilir<br />
+                                Kişinin yaşı, mesleği, çocuk sayısı, geliri, medeni durumu, eş geliri ( AGİ belirlenmesi için )<br />
+                                Kusur oranı hesaplamaya dahil edilir.<br />
+                                Maksimum teminatlar dahilinde destekten yoksun kalma tazminatı alınabilir.<br />
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section id="7" style="
+                         padding-top: 10rem;
+                         padding-bottom: calc(10rem - 4.5rem);
+                         background: linear-gradient(to bottom, rgba(92, 77, 66, 0) 0%, rgba(92, 77, 66, 0) 100%), url(../../colorlib-regform-3/images/araba-kaza-7.jpg);
+                         background-position: center;
+                         background-repeat: no-repeat;
+                         background-attachment: scroll;
+                         background-size: cover;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="page-title-inner">
+                                    <div class="title">
+                                        <h2 class="font-weight-bold" style="color:white;">İş Yeri ve Konut Sigortaları</h2>
+                                    </div>
+                                    <p class="font-weight-bold" style="color:white;">
+                                        Sigorta Poliçesinde ki güvence altına alınmış klozlarda ki kesintiler, muafiyetler ve olumsuz sonuçlanan dosyaların  sigorta şirketlerinden ara farkının alınması.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section class="page-section">
+                    <div class="container px-4 px-lg-5 h-100">
+                        <div class="row gx-4 gx-lg-5">
+                            <h1 style="font-family:'Times New Roman'">İş yeri ve Konut Sigorta Tazminatı Nedir?</h1>
+                            <br /><br /><br /><br />
+                            <p class="font-weight-normal">
+                                2 Yıl geriye dönük olarak alınabilir.<br />
+                                Sigorta Poliçesinde ki güvence altına alınmış Klozlarda ki kesintiler, muafiyetler ve olumsuz sonuçlanan dosyaların  sigorta şirketlerinden ara farkının alınması.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section id="8" style="
+                         padding-top: 10rem;
+                         padding-bottom: calc(10rem - 4.5rem);
+                         background: linear-gradient(to bottom, rgba(92, 77, 66, 0) 0%, rgba(92, 77, 66, 0) 100%), url(../../colorlib-regform-3/images/araba-kaza-8.jpg);
+                         background-position: center;
+                         background-repeat: no-repeat;
+                         background-attachment: scroll;
+                         background-size: cover;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="page-title-inner">
+                                    <div class="title">
+                                        <h2 class="font-weight-bold" style="color:orange;">Hayat Poliçesi, Ferdi Kaza Sigortası ve Tedavi Giderleri</h2>
+                                    </div>
+                                    <p class="font-weight-bold" style="color:orange;">
+                                        Hayat Sigortası, hayatın getireceği beklenmedik durumlara karşı kendinizin ve sevdiklerinizin yaşam standardını korumanızı sağlayan bir güvencedir.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section class="page-section">
+                    <div class="container px-4 px-lg-5 h-100">
+                        <div class="row gx-4 gx-lg-5">
+                            <h1 style="font-family:'Times New Roman'">Hayat Sigortası Nedir?</h1>
+                            <br /><br /><br /><br />
+                            <p class="font-weight-normal">
+                                Hayat Sigortası, hayatın getireceği beklenmedik durumlara karşı kendinizin ve sevdiklerinizin yaşam standardını korumanızı sağlayan bir güvencedir.
+                                <br /><br />
+                                Hayat Sigortası’nda, poliçeniz süresince vefat, maluliyet, tehlikeli hastalık veya işsizlik gibi durumlar yaşamanız halinde; size veya belirtmiş olduğunuz lehtar ya da kanuni varislerinize poliçede belirtilen teminat tutarında bir ödeme yapılır.
+                                <br /><br />
+                                Hayat sigortaları, öncelikle ana teminat olan vefat teminatını içermektedir. Hayat Sigortalarında vefat teminatı; sigortalının başına istenmeyen bir olay gelmesi sonucu vefat etmesi durumunda devreye girerek sigortalının önceden belirtmiş olduğu lehtar ya da kanuni varislerine sigorta poliçesinde belirtilen teminatları ödenmesidir.
+                                <br /><br />
+                                Hayat Sigortalarında, ana teminat olan vefatın yanında, aşağıdaki ek teminatları içeren ürün opsiyonları da bulunur.
+                                <br /><br />
+                                Kazaen vefat teminatı<br />
+                                Kaza/hastalık sonucu maluliyet teminatı<br />
+                                Kaza sonucu tedavi masrafları teminatı<br />
+                                Tehlikeli hastalıklar teminatı<br />
+                                Dönüşümlü İşsizlik teminatı<br />
+                                Bordrolu çalışanlar için; İstemdışı İşsizlik Teminatı,<br />
+                                Profesyonel meslek sahibi herkes için; Geçici İş Göremezlik Teminatı (Kaza veya Hastalık Sonucu),<br />
+                                Ev hanımları, öğrenciler vb. için; Gündelik Hastane Tazminatı Teminatı (Kaza veya Hastalık Sonucu).<br />
+                            </p>
+                            <h3 style="font-family:'Times New Roman'">Hayat Sigortası Tazminatı Nedir?</h3>
+                            <br /><br />
+                            <p class="font-weight-normal">
+                                Hayat Sigortası yaptırdıktan sonra bir maluliyet veya vefat durumlarında yahut teminatta bulunan diğer hallerde tazminat hakkınız doğmaktadır. Diğer tüm sigorta tazminatlarında olduğu gibi sigorta şirketleri tazminatlarınızı çeşitli nedenlerle reddedebilir veya tam olarak ödemeyebilir. Tüm bu durumlarda hakkınızı arayabilirsiniz. Ödemesi yapılmayan tutar için hukuki yollara başvurarak hakkınızı alabilirsiniz.
+                                <br /><br />
+                                Hayat Sigortası Tazminatı hakkınız için bize ulaşarak tazminatlarınızı tam ve eksiksiz alabilmek için profesyonel destek alabilirsiniz.
+                            </p>
+                            <h3 style="font-family:'Times New Roman'">Özel Sağlık Sigortası Nedir?</h3>
+                            <br /><br />
+                            <p class="font-weight-normal">
+                                Ne yazık ki sağlık sorunları hayatın bir gerçeği. Hastalık ya da kaza sonucu yaşanabilecek sağlık sorunlarının tedavisi için ise kendinizi güvence altına almanız oldukça önemli. Bu sayede dilediğiniz anlaşmalı özel hastanede, dilediğiniz doktora tedavi olabilirsiniz. Peki, kendinizi nasıl mı güvence altına alacaksınız? Elbette özel sağlık sigortaları sayesinde! Haydi şimdi, özel sağlık sigortası neleri kapsar, hangi avantajları sunar gibi soruların cevaplarını verelim.
+                                <br /><br />
+                                Özel sağlık sigortası; kaza veya hastalık nedeniyle meydana gelen sağlık sorunlarının tedavisini, poliçenizde yer alan teminatlar ve limitler dâhilinde karşılayan sigorta türüdür. Bu doğrultuda özel sağlık sigortası poliçesi yaptırırken teminatlara göz atmayı ve ihtiyacınız olabileceğini düşündüğünüz teminatları poliçenize dâhil etmeyi unutmamalısınız. Özel sağlık sigortanızdan yararlandığınızda dilediğiniz doktoru seçebilir ve tedaviniz için ihtiyacınız olan hizmetleri ücretsiz ya da minimum ücret ödeyerek alabilirsiniz. Bu arada “Özel sağlık sigortası zorunlu mu?” sorusunun cevabını da vermekte fayda var. Özel sağlık sigortası zorunlu değildir, isteğe bağlıdır ve 18-65 yaş arası, gerekli şartları sağlayan herkes özel sağlık sigortası sahibi olabilir. 1 yıl süreyle yapılan sağlık sigortaları, yıl bitiminde kişinin durumuna göre yenilenebilir.
+                            </p>
+                            <h3 style="font-family:'Times New Roman'">Özel Sağlık Sigortası Tazminatı Nasıl Alınır?</h3>
+                            <br /><br />
+                            <p class="font-weight-normal">
+                                Özel Sağlık Sigortası yaptırdıktan sonra bir maluliyet veya vefat durumlarında yahut teminatta bulunan diğer hallerde tazminat hakkınız doğmaktadır. Diğer tüm sigorta tazminatlarında olduğu gibi sigorta şirketleri tazminatlarınızı çeşitli nedenlerle reddedebilir veya tam olarak ödemeyebilir. Tüm bu durumlarda hakkınızı arayabilirsiniz. Ödemesi yapılmayan tutar için hukuki yollara başvurarak hakkınızı alabilirsiniz.
+                                <br /><br />
+                                Özel Sağlık Sigortası Tazminatı hakkınız için bize ulaşarak tazminatlarınızı tam ve eksiksiz alabilmek için profesyonel destek alabilirsiniz.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section id="9" style="
+                         padding-top: 10rem;
+                         padding-bottom: calc(10rem - 4.5rem);
+                         background: linear-gradient(to bottom, rgba(92, 77, 66, 0) 0%, rgba(92, 77, 66, 0) 100%), url(../../colorlib-regform-3/images/araba-kaza-9.jpg);
+                         background-position: center;
+                         background-repeat: no-repeat;
+                         background-attachment: scroll;
+                         background-size: cover;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="page-title-inner">
+                                    <div class="title">
+                                        <h2 class="font-weight-bold" style="color:white;">Hayvan Sigortası ve Hayvan Tedavi Giderleri</h2>
+                                    </div>
+                                    <p class="font-weight-bold" style="color:white;">
+                                        Veteriner Hekimlerde yaralı hayvana yapılan tüm tedavi giderlerinin ilgili aracın trafik sigortasından tahsil edilmesidir.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section class="page-section">
+                    <div class="container px-4 px-lg-5 h-100">
+                        <div class="row gx-4 gx-lg-5">
+                            <h1 style="font-family:'Times New Roman'">İş yeri ve Konut Sigorta Tazminatı Nedir?</h1>
+                            <br /><br /><br /><br />
+                            <p class="font-weight-normal">
+                                Trafik kazasına magruz kalan sahipli ve sahipsiz tüm hayvanların sağlığına kavuşması için, Veteriner Hekimlerde yaralı hayvana yapılan tüm tedavi giderlerinin ilgili aracın trafik sigortasından tahsil edilmesidir.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section id="10" style="
+                         padding-top: 10rem;
+                         padding-bottom: calc(10rem - 4.5rem);
+                         background: linear-gradient(to bottom, rgba(92, 77, 66, 0) 0%, rgba(92, 77, 66, 0) 100%), url(../../colorlib-regform-3/images/araba-kaza-10.jpg);
+                         background-position: center;
+                         background-repeat: no-repeat;
+                         background-attachment: scroll;
+                         background-size: cover;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="page-title-inner">
+                                    <div class="title">
+                                        <h2 class="font-weight-bold" style="color:white;">Tarım Sigortası</h2>
+                                    </div>
+                                    <p class="font-weight-bold" style="color:white;">
+                                        Tüm bitkisel ürünler için; Dolu, fırtına, hortum, yangın, deprem, heyelan, sel ve su baskınının neden olduğu miktar kaybı, dolunun yaş meyve, yaş sebze ve kesme çiçeklerde neden olduğu kalite kaybı, teminat kapsamına alınmaktadır.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section class="page-section">
+                    <div class="container px-4 px-lg-5 h-100">
+                        <div class="row gx-4 gx-lg-5">
+                            <h1 style="font-family:'Times New Roman'">Sigorta Kapsamı ve Sigortalanan Tehlikeler</h1>
+                            <br /><br /><br /><br />
+                            <p class="font-weight-normal">
+                                Tüm bitkisel ürünler için; Dolu, fırtına, hortum, yangın, deprem, heyelan, sel ve su baskınının neden olduğu miktar kaybı, dolunun yaş meyve, yaş sebze ve kesme çiçeklerde neden olduğu kalite kaybı, teminat kapsamına alınmaktadır.
+                                <br /><br />
+                                Oluşan tehlike durumundaki teminatlarda eksik ödemeler talepleri yapılabilmektedir.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section id="11" style="
+                         padding-top: 10rem;
+                         padding-bottom: calc(10rem - 4.5rem);
+                         background: linear-gradient(to bottom, rgba(92, 77, 66, 0) 0%, rgba(92, 77, 66, 0) 100%), url(../../colorlib-regform-3/images/araba-kaza-11.jpg);
+                         background-position: center;
+                         background-repeat: no-repeat;
+                         background-attachment: scroll;
+                         background-size: cover;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="page-title-inner">
+                                    <div class="title">
+                                        <h2 class="font-weight-bold" style="color:white;">Deniz Taşıtları</h2>
+                                    </div>
+                                    <p class="font-weight-bold" style="color:white;">
+                                        Deniz Araçları Zorunlu Mali Sorumluluk Sigortası genel şartları kapsamında mağdur kişinin alabileceği farklı birçok tazminat hakkı bulunmaktadır.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section class="page-section">
+                    <div class="container px-4 px-lg-5 h-100">
+                        <div class="row gx-4 gx-lg-5">
+                            <br /><br />
+                            <p class="font-weight-normal">
+                                Deniz Araçları Zorunlu Mali Sorumluluk Sigortası genel şartları kapsamında; Deniz aracının yola çıktığı noktadan varış noktasına kadar geçen süre içerisinde meydana gelen bir kazada, bedenen veya madden zarar görülmesi halinde, mağdur kişinin alabileceği farklı birçok tazminat hakkı bulunmaktadır.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+        </div>
+        <!-- ./wrapper -->
+        <!-- REQUIRED SCRIPTS -->
+        <!-- jQuery -->
+        <script src="~/AdminLTE-3.0.4/plugins/jquery/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="~/AdminLTE-3.0.4/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- AdminLTE -->
+        <script src="~/AdminLTE-3.0.4/dist/js/adminlte.js"></script>
+        <!-- OPTIONAL SCRIPTS -->
+        <script src="~/AdminLTE-3.0.4/plugins/chart.js/Chart.min.js"></script>
+        <script src="~/AdminLTE-3.0.4/dist/js/demo.js"></script>
+        <script src="~/AdminLTE-3.0.4/dist/js/pages/dashboard3.js"></script>
+</body>
+</html>
+
